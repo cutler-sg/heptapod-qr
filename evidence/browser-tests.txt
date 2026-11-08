@@ -1,0 +1,13 @@
+$ bun scripts/browser-test.ts
+PASS standalone file boots offline with Michael, 12 variants and adjacent caveat
+PASS selected variant project download/import reproduces exact stencil bytes
+PASS meaning phrase requires explicit choice; invalid state disables exports; undo/reset work
+PASS case is preserved in editor and exported geometry
+PASS source/artist comparison, transparent preview and separate physical reports
+PASS physical controls change final SVG millimetres
+PASS SVG/source/reverse/transfer, 2126px PNG, manifest, comparison and print downloads
+PASS source import decodes geometry and hostile SVG/JSON cannot execute or pollute
+PASS decorative mode disables source and exposes non-reversible status
+PASS 390px mobile layout has no horizontal overflow
+PASS print CSS measures 90mm artwork and 50mm scale bar; A4 PDF generated at scale 1
+PASS zero HTTP(S) requests, zero page errors, zero persistent local storage

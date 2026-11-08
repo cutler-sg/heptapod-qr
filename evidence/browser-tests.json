@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "standalone file boots offline with Michael, 12 variants and adjacent caveat",
+    "selected variant project download/import reproduces exact stencil bytes",
+    "meaning phrase requires explicit choice; invalid state disables exports; undo/reset work",
+    "case is preserved in editor and exported geometry",
+    "source/artist comparison, transparent preview and separate physical reports",
+    "physical controls change final SVG millimetres",
+    "SVG/source/reverse/transfer, 2126px PNG, manifest, comparison and print downloads",
+    "source import decodes geometry and hostile SVG/JSON cannot execute or pollute",
+    "decorative mode disables source and exposes non-reversible status",
+    "390px mobile layout has no horizontal overflow",
+    "print CSS measures 90mm artwork and 50mm scale bar; A4 PDF generated at scale 1",
+    "zero HTTP(S) requests, zero page errors, zero persistent local storage"
+  ],
+  "externalRequests": [],
+  "pageErrors": [],
+  "printDimensions": {
+    "art": 340.15625,
+    "bar": 188.96875
+  }
+}

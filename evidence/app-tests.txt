@@ -1,0 +1,40 @@
+bun test v1.3.14 (0d9b296a)
+
+tests/codec.test.ts:
+(pass) audited v1 interface > exact Michael, case, Unicode, punctuation and whitespace round trips [102.03ms]
+(pass) audited v1 interface > all twelve source variants preserve payload and mark classes [282.83ms]
+(pass) audited v1 interface > physical width, symmetric padding and baked rotations preserve path decoding [60.11ms]
+(pass) audited v1 interface > checksum detects corruption and legacy v2 fails explicitly [2.26ms]
+(pass) audited v1 interface > stripping optional plaintext metadata does not affect core decoding [1.28ms]
+(pass) audited v1 interface > committed upstream hash corpus still matches unmodified encoder [7381.24ms]
+(pass) input and project boundaries > normalization is explicit, case and whitespace never change [0.34ms]
+(pass) input and project boundaries > empty, malformed Unicode, excessive byte length and invalid controls reject [0.96ms]
+(pass) input and project boundaries > project JSON reproduces byte-identical source and derivative [10.86ms]
+(pass) input and project boundaries > hostile SVGs and ignored presentation tricks fail before decoding [5.86ms]
+
+tests/render.test.ts:
+(pass) artist derivative contract > deterministic 12 seeds retain every mandatory mark; never claimed v1 [351.22ms]
+(pass) artist derivative contract > mark classes persist under physical settings and decoration reduction [2.16ms]
+(pass) artist derivative contract > bad dimensions produce warnings without dropping encoded marks [250.13ms]
+(pass) artist derivative contract > decorative mode is deterministic and has no encoded source or checksum [2.54ms]
+(pass) artist derivative contract > mirroring explicitly reflects coordinates and reversal swaps ink/background [2.20ms]
+(pass) artist derivative contract > manifest hashes exact files without timestamps and print sheet uses mm [18.72ms]
+(pass) artist derivative contract > comparison contains all three modes and escapes user text [20.14ms]
+(pass) artist derivative contract > committed golden SVG bytes do not drift [22.06ms]
+
+tests/geometry.test.ts:
+(pass) final millimetre polygon screening > reports structural widths and terminal tips separately [1.56ms]
+(pass) final millimetre polygon screening > detects ink outside the safe inset [0.09ms]
+(pass) final millimetre polygon screening > reports a near-touching gap and accepts a gap above threshold [0.27ms]
+(pass) final millimetre polygon screening > detects crossings, contact, and complete containment [0.17ms]
+(pass) final millimetre polygon screening > detects self-intersection even with a zero gap threshold [0.06ms]
+(pass) final millimetre polygon screening > detects a narrow exterior channel without treating solid ink as air [0.11ms]
+(pass) final millimetre polygon screening > exempts only the ring/tendril overlap inside the explicit join circle [0.23ms]
+(pass) final millimetre polygon screening > a join does not hide a near miss elsewhere on the same pair [0.15ms]
+(pass) final millimetre polygon screening > handles empty input and repeated closing points [0.06ms]
+(pass) final millimetre polygon screening > allows four-decimal coordinate rounding at nominal minima [0.07ms]
+
+ 28 pass
+ 0 fail
+ 4689 expect() calls
+Ran 28 tests across 3 files. [8.57s]
