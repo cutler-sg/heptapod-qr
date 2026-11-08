@@ -1,0 +1,45 @@
+
+> heptapod-ink@0.1.3 test
+> node --test test/*.test.js packages/heptapod-ink-extras/test/*.test.js
+
+✔ parse() extracts viewBox, paths and circles from corpus samples (926.190286ms)
+✔ parse() geometry round-trips: repainting parsed paths decodes the same (512.72359ms)
+✔ parse() rejects non-SVG and viewBox-less input with LogogramError (0.651592ms)
+✔ low-level packing round-trips and agrees with the core codec (1125.582922ms)
+✔ tampering with slots fails the checksum with the core's LogogramError (0.281297ms)
+✔ renderSlots() output decodes through the core decoder (143.144009ms)
+✔ animate() adds SMIL to encode() output and it still decodes (122.587192ms)
+✔ animate() with every option produces a fully SMIL-augmented SVG that still decodes (4.7976ms)
+✔ animate() rejects input that isn't a heptapod-ink logogram (0.256599ms)
+✔ format constants still match the core codec (0.219925ms)
+✔ corpus population is committed, compressed and large enough (2.605695ms)
+✔ corpus covers every curated edge-case family and both alphabets (2.687461ms)
+✔ CORPUS GATE: every entry's stored sha256 matches encode, and decode returns its text (11770.427519ms)
+✔ generator is deterministic: committed files match a fresh in-memory run (9440.286589ms)
+✔ every legacy 0.1.1 fixture decodes exactly to its stored text (186.655153ms)
+✔ deterministic sample of >= 200 v2-era SVGs all fail loudly under the restored decoder (96.339401ms)
+✔ dist IIFE defines the Heptapod global with exactly { encode, decode, LogogramError } (3.929322ms)
+✔ Heptapod global round-trips through encode/decode (8.273816ms)
+✔ round-trip property: decode(encode(t).svg).text === t for 1200 seeded-random texts (11539.558641ms)
+✔ determinism: same text and options encode to byte-identical SVG (1032.712126ms)
+✔ injectivity: 100 distinct texts produce pairwise-distinct SVGs (213.082313ms)
+✔ custom seed variants still decode to the original text (572.336311ms)
+✔ error taxonomy: exact LogogramError codes for each malformed input (1.817668ms)
+✔ tampering a slot flips the error to checksum (597.797488ms)
+✔ encode rejects empty and non-string text with TypeError (0.239456ms)
+✔ rotation tolerance: rotating path coordinates about the centre preserves decode (2540.589889ms)
+✔ decoration insensitivity: cosmetic edits never change decode results (439.182479ms)
+✔ encode output is byte-identical to published 0.1.1 (fixture texts + 600 generated) (11511.841031ms)
+✔ determinism: the restored encoder is byte-stable across calls (383.635054ms)
+✔ VAL-FLOW-02(a): every committed legacy v1 fixture decodes exactly to its stored text (270.45548ms)
+✔ VAL-FLOW-02(b): a deterministic sample of >= 200 v2-era SVGs throws LogogramError (80.332087ms)
+✔ ring point-count header cannot collide between v1 and v2-era formats for any slot count (0.614343ms)
+✔ text packing is unchanged from 0.1.1 (2.587514ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21728.305181

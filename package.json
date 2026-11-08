@@ -1,0 +1,16 @@
+{
+  "name": "arrival-atelier",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "test": "bun test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check src tests scripts",
+    "test:browser": "bun scripts/browser-test.ts",
+    "examples": "bun scripts/examples.ts"
+  },
+  "dependencies": {"zod": "4.3.6"},
+  "devDependencies": {"@biomejs/biome": "2.4.6", "@types/bun": "1.3.10", "typescript": "5.9.3", "esbuild": "0.27.3", "playwright": "1.58.2"}
+}
