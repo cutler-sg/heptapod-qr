@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T14:24:20.744Z",
+  "title": "Design System: Arrival Atelier",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.012 125)",
+          "oklch(26% 0.012 125)",
+          "oklch(38% 0.012 125)",
+          "oklch(49% 0.012 125)",
+          "oklch(61% 0.012 125)",
+          "oklch(72% 0.012 125)",
+          "oklch(84% 0.012 125)",
+          "oklch(95% 0.012 125)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted text",
+        "tonalRamp": [
+          "oklch(15% 0.02 115)",
+          "oklch(26% 0.02 115)",
+          "oklch(38% 0.02 115)",
+          "oklch(49% 0.02 115)",
+          "oklch(61% 0.02 115)",
+          "oklch(72% 0.02 115)",
+          "oklch(84% 0.02 115)",
+          "oklch(95% 0.02 115)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "tonalRamp": [
+          "oklch(15% 0.016 115)",
+          "oklch(26% 0.016 115)",
+          "oklch(38% 0.016 115)",
+          "oklch(49% 0.016 115)",
+          "oklch(61% 0.016 115)",
+          "oklch(72% 0.016 115)",
+          "oklch(84% 0.016 115)",
+          "oklch(95% 0.016 115)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Olive",
+        "tonalRamp": [
+          "oklch(15% 0.05 135)",
+          "oklch(26% 0.05 135)",
+          "oklch(38% 0.05 135)",
+          "oklch(49% 0.05 135)",
+          "oklch(61% 0.05 135)",
+          "oklch(72% 0.05 135)",
+          "oklch(84% 0.05 135)",
+          "oklch(95% 0.05 135)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White paper",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm canvas",
+        "tonalRamp": [
+          "oklch(15% 0.008 90)",
+          "oklch(26% 0.008 90)",
+          "oklch(38% 0.008 90)",
+          "oklch(49% 0.008 90)",
+          "oklch(61% 0.008 90)",
+          "oklch(72% 0.008 90)",
+          "oklch(84% 0.008 90)",
+          "oklch(95% 0.008 90)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft hover",
+        "tonalRamp": [
+          "oklch(15% 0.016 110)",
+          "oklch(26% 0.016 110)",
+          "oklch(38% 0.016 110)",
+          "oklch(49% 0.016 110)",
+          "oklch(61% 0.016 110)",
+          "oklch(72% 0.016 110)",
+          "oklch(84% 0.016 110)",
+          "oklch(95% 0.016 110)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Pale field",
+        "tonalRamp": [
+          "oklch(15% 0.008 110)",
+          "oklch(26% 0.008 110)",
+          "oklch(38% 0.008 110)",
+          "oklch(49% 0.008 110)",
+          "oklch(61% 0.008 110)",
+          "oklch(72% 0.008 110)",
+          "oklch(84% 0.008 110)",
+          "oklch(95% 0.008 110)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field border",
+        "tonalRamp": [
+          "oklch(15% 0.02 115)",
+          "oklch(26% 0.02 115)",
+          "oklch(38% 0.02 115)",
+          "oklch(49% 0.02 115)",
+          "oklch(61% 0.02 115)",
+          "oklch(72% 0.02 115)",
+          "oklch(84% 0.02 115)",
+          "oklch(95% 0.02 115)"
+        ]
+      },
+      "selected-study": {
+        "role": "neutral",
+        "displayName": "Selected study",
+        "tonalRamp": [
+          "oklch(15% 0.018 115)",
+          "oklch(26% 0.018 115)",
+          "oklch(38% 0.018 115)",
+          "oklch(49% 0.018 115)",
+          "oklch(61% 0.018 115)",
+          "oklch(72% 0.018 115)",
+          "oklch(84% 0.018 115)",
+          "oklch(95% 0.018 115)"
+        ]
+      },
+      "danger": {
+        "role": "semantic",
+        "displayName": "Inspection rust",
+        "tonalRamp": [
+          "oklch(15% 0.11 40)",
+          "oklch(26% 0.11 40)",
+          "oklch(38% 0.11 40)",
+          "oklch(49% 0.11 40)",
+          "oklch(61% 0.11 40)",
+          "oklch(72% 0.11 40)",
+          "oklch(84% 0.11 40)",
+          "oklch(95% 0.11 40)"
+        ]
+      },
+      "error-background": {
+        "role": "semantic",
+        "displayName": "Pale error",
+        "tonalRamp": [
+          "oklch(15% 0.035 50)",
+          "oklch(26% 0.035 50)",
+          "oklch(38% 0.035 50)",
+          "oklch(49% 0.035 50)",
+          "oklch(61% 0.035 50)",
+          "oklch(72% 0.035 50)",
+          "oklch(84% 0.035 50)",
+          "oklch(95% 0.035 50)"
+        ]
+      },
+      "error-text": {
+        "role": "semantic",
+        "displayName": "Error text",
+        "tonalRamp": [
+          "oklch(15% 0.1 40)",
+          "oklch(26% 0.1 40)",
+          "oklch(38% 0.1 40)",
+          "oklch(49% 0.1 40)",
+          "oklch(61% 0.1 40)",
+          "oklch(72% 0.1 40)",
+          "oklch(84% 0.1 40)",
+          "oklch(95% 0.1 40)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Introduction",
+        "purpose": "Serif introductory heading."
+      },
+      "body": {
+        "displayName": "Tool interface",
+        "purpose": "Local system sans-serif interface."
+      },
+      "measurement": {
+        "displayName": "Measurements",
+        "purpose": "Physical annotation and encoded payloads."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background-color 0.12s",
+        "purpose": "Only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "study-selection",
+        "value": "background-color 0.16s, border-color 0.16s",
+        "purpose": "Only under prefers-reduced-motion: no-preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1450px"
+      },
+      {
+        "name": "compact-max",
+        "value": "900px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "650px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Quiet button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Quiet button as implemented in the workbench.",
+      "html": "<button class=\"ds-button\">Quiet button</button>",
+      "css": ".ds-button{font:13px/1.4 Arial,Helvetica,sans-serif;border:1px solid var(--line,#d7d8ce);border-radius:5px;padding:9px 13px;color:var(--ink,#282a25);background:transparent;cursor:pointer;}.ds-button:hover{background:var(--soft,#e8e9df)}.ds-button:focus-visible{outline:2px solid var(--accent,#3d5138);outline-offset:3px}.ds-button:disabled{opacity:.45;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.ds-button{transition:background-color .12s}}"
+    },
+    {
+      "name": "Primary export",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary export as implemented in the workbench.",
+      "html": "<button class=\"ds-primary\">Primary export</button>",
+      "css": ".ds-primary{font:13px/1.4 Arial,Helvetica,sans-serif;border:1px solid var(--line,#d7d8ce);border-radius:5px;padding:9px 13px;color:var(--ink,#282a25);background:transparent;cursor:pointer;background:var(--accent,#3d5138);color:#fff;border-color:var(--accent,#3d5138);}.ds-primary:hover{background:var(--soft,#e8e9df)}.ds-primary:focus-visible{outline:2px solid var(--accent,#3d5138);outline-offset:3px}.ds-primary:disabled{opacity:.45;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.ds-primary{transition:background-color .12s}}.ds-primary:hover{background:var(--accent,#3d5138)}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Pale editable field with a visible boundary.",
+      "html": "<label class=\"ds-label\" for=\"ds-text\">Original text</label><textarea class=\"ds-field\" id=\"ds-text\" rows=\"2\">Michael</textarea>",
+      "css": ".ds-label{display:block;font:600 12px Arial,Helvetica,sans-serif;margin:0 0 6px}.ds-field{font:15px/1.5 Arial,Helvetica,sans-serif;border:1px solid #bfc3b6;border-radius:4px;color:var(--ink,#282a25);background:#fafbf7;caret-color:var(--accent,#3d5138);padding:9px 10px;max-width:100%;min-height:70px;resize:vertical}.ds-field:focus-visible{outline:2px solid var(--accent,#3d5138);outline-offset:3px}"
+    },
+    {
+      "name": "Preview navigation",
+      "kind": "nav",
+      "refersTo": "view-tab",
+      "description": "Pressed preview choice has a persistent olive underline.",
+      "html": "<div class=\"ds-tabs\" role=\"group\" aria-label=\"Preview version\"><button aria-pressed=\"true\">Artist study</button><button aria-pressed=\"false\">Encoded source</button><button aria-pressed=\"false\">Compare</button></div>",
+      "css": ".ds-tabs{display:flex;gap:6px;border-bottom:1px solid var(--line,#d7d8ce)}.ds-tabs button{font:13px/1.4 Arial,Helvetica,sans-serif;background:transparent;color:var(--muted,#606257);padding:8px 10px;border:0;border-bottom:2px solid transparent;cursor:pointer}.ds-tabs button[aria-pressed=\"true\"]{color:var(--ink,#282a25);border-bottom-color:var(--accent,#3d5138)}.ds-tabs button:hover{background:var(--soft,#e8e9df)}.ds-tabs button:focus-visible{outline:2px solid var(--accent,#3d5138);outline-offset:3px}"
+    },
+    {
+      "name": "Selected study",
+      "kind": "card",
+      "refersTo": "study-selected",
+      "description": "Selected artwork thumbnail; SVG here illustrates the contained-art placement only.",
+      "html": "<button class=\"ds-study\" aria-pressed=\"true\"><svg viewBox=\"0 0 100 100\" aria-label=\"Illustrative ring placeholder\"><circle cx=\"50\" cy=\"50\" r=\"30\" fill=\"none\" stroke=\"#282a25\" stroke-width=\"4\"/></svg><span>01</span></button>",
+      "css": ".ds-study{width:120px;cursor:pointer;border:1px solid var(--accent,#3d5138);background:#edf0e7;border-radius:3px;padding:5px}.ds-study svg{display:block;width:100%;aspect-ratio:1}.ds-study span{display:block;color:var(--accent,#3d5138);font:600 10px Arial,Helvetica,sans-serif;font-variant-numeric:tabular-nums}.ds-study:hover{background:var(--soft,#e8e9df)}.ds-study:focus-visible{outline:2px solid var(--accent,#3d5138);outline-offset:3px}@media(prefers-reduced-motion:no-preference){.ds-study{transition:background-color .16s,border-color .16s}}"
+    },
+    {
+      "name": "Inspection alert",
+      "kind": "custom",
+      "description": "Inline operation failure surface.",
+      "html": "<div class=\"ds-error\" role=\"alert\">Unable to export this study.</div>",
+      "css": ".ds-error{background:#f8e6db;color:#702711;padding:13px;font:13px/1.5 Arial,Helvetica,sans-serif;border-radius:4px;margin-top:12px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A name, in ink.",
+    "overview": "The implemented workbench places procedural black ink on a warm, quiet page. Compact controls support a much larger artwork surface; restrained olive marks actions and selection. This documents the shipped implementation, not a user-selected visual identity.",
+    "keyCharacteristics": [
+      "Warm page, white artwork, dark text and restrained olive controls.",
+      "Serif introduction paired with compact system sans-serif tools.",
+      "Source and artist-study comparison with the honesty caveat beside the work.",
+      "Local, offline operation with system-local fonts and generated vector artwork."
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep the artwork larger and visually stronger than the editing controls.",
+      "Do use the established olive border, underline and outline treatments for selection and focus.",
+      "Do keep source and derivative captions explicit and the honesty caveat adjacent to the preview.",
+      "Do retain local system fonts and generated artwork for offline use."
+    ],
+    "donts": [
+      "Don't replace the flat surfaces with decorative shadows or large rounded cards.",
+      "Don't use the artwork's expressive ink shape as a control silhouette.",
+      "Don't hide selection or keyboard focus behind color alone."
+    ]
+  }
+}

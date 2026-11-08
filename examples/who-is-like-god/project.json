@@ -1,0 +1,321 @@
+{
+  "format": "arrival-atelier-project/1",
+  "state": {
+    "input": "Michael",
+    "phrase": "Who is like God?",
+    "mode": "meaning",
+    "normalization": "none",
+    "seed": 42,
+    "settings": {
+      "diameter": 90,
+      "minWidth": 0.8,
+      "minGap": 0.8,
+      "tendrilCount": 5,
+      "tendrilLength": 10,
+      "density": 0.55,
+      "reduction": 0.35,
+      "taper": 0.3,
+      "spatter": false,
+      "rotation": 0,
+      "margin": 5
+    }
+  },
+  "ir": {
+    "version": "atelier-ir/1",
+    "originalInput": "Michael",
+    "selectedInput": "Who is like God?",
+    "normalizedInput": "Who is like God?",
+    "normalization": "none",
+    "mode": "meaning",
+    "codecVersion": "heptapod-ink/geometry-v1-restored",
+    "marks": [
+      {
+        "order": 0,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 1,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 2,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 3,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 4,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 5,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 6,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 7,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 8,
+        "digit": 7,
+        "swelling": 2,
+        "tendril": true
+      },
+      {
+        "order": 9,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 10,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 11,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 12,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 13,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 14,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 15,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 16,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 17,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 18,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 19,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 20,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 21,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 22,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 23,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 24,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 25,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 26,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 27,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 28,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 29,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 30,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 31,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 32,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 33,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 34,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 35,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 36,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 37,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 38,
+        "digit": 7,
+        "swelling": 2,
+        "tendril": true
+      },
+      {
+        "order": 39,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 40,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 41,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 42,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 43,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      }
+    ],
+    "checksum": 37223,
+    "compact": false,
+    "orientation": "Source: first outer-path point beside gap, clockwise in SVG coordinates, then reversed inner run. Tattoo derivative: same ordered classes; no supported decoder.",
+    "styleSeed": 42,
+    "renderVersion": "atelier/1",
+    "upstreamCommit": "34817c6f925a85ece2c80599148b70d96de578696bf4bb86e9cc8f0a8c12c49e",
+    "dimensions": {
+      "widthMm": 90,
+      "heightMm": 90
+    },
+    "constraints": {
+      "diameter": 90,
+      "minWidth": 0.8,
+      "minGap": 0.8,
+      "tendrilCount": 5,
+      "tendrilLength": 10,
+      "density": 0.55,
+      "reduction": 0.35,
+      "taper": 0.3,
+      "spatter": false,
+      "rotation": 0,
+      "margin": 5
+    }
+  }
+}

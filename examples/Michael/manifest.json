@@ -1,0 +1,217 @@
+{
+  "format": "arrival-atelier-manifest/1",
+  "ir": {
+    "version": "atelier-ir/1",
+    "originalInput": "Michael",
+    "selectedInput": "Michael",
+    "normalizedInput": "Michael",
+    "normalization": "none",
+    "mode": "spelling",
+    "codecVersion": "heptapod-ink/geometry-v1-restored",
+    "marks": [
+      {
+        "order": 0,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 1,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 2,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 3,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 4,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 5,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 6,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 7,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 8,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 9,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 10,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 11,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 12,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 13,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 14,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 15,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 16,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 17,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 18,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 19,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 20,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 21,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      }
+    ],
+    "checksum": 3939,
+    "compact": false,
+    "orientation": "Source: first outer-path point beside gap, clockwise in SVG coordinates, then reversed inner run. Tattoo derivative: same ordered classes; no supported decoder.",
+    "styleSeed": 42,
+    "renderVersion": "atelier/1",
+    "upstreamCommit": "34817c6f925a85ece2c80599148b70d96de578696bf4bb86e9cc8f0a8c12c49e",
+    "dimensions": {
+      "widthMm": 90,
+      "heightMm": 90
+    },
+    "constraints": {
+      "diameter": 90,
+      "minWidth": 0.8,
+      "minGap": 0.8,
+      "tendrilCount": 5,
+      "tendrilLength": 10,
+      "density": 0.55,
+      "reduction": 0.35,
+      "taper": 0.3,
+      "spatter": false,
+      "rotation": 0,
+      "margin": 5
+    }
+  },
+  "settings": {
+    "diameter": 90,
+    "minWidth": 0.8,
+    "minGap": 0.8,
+    "tendrilCount": 5,
+    "tendrilLength": 10,
+    "density": 0.55,
+    "reduction": 0.35,
+    "taper": 0.3,
+    "spatter": false,
+    "rotation": 0,
+    "margin": 5
+  },
+  "upstream": {
+    "url": "https://tangled.org/mads.havmand.eu/heptapod-ink",
+    "commit": "34817c6f925a85ece2c80599148b70d96de578696bf4bb86e9cc8f0a8c12c49e",
+    "packageVersion": "0.1.3",
+    "geometryFormat": "restored-v1",
+    "license": "MIT"
+  },
+  "status": {
+    "source": "Verified serialized path-geometry round trip; no plaintext metadata.",
+    "stencil": "Artistic derivative; no supported geometric decoding.",
+    "reversed": "White shapes on a black field; ink and negative space exchange roles. Artistic derivative.",
+    "transfer": "Horizontally reflected stencil for transfer only; do not mistake it for final artwork."
+  },
+  "contentHashAlgorithm": "SHA-256 of exact UTF-8 SVG bytes",
+  "contentHashes": {
+    "source": "5c36d1943fd031403a3696833adc262f0b6c8efcf764bdb7b5e3fa5f4896a1a6",
+    "stencil": "de3d9c62f19dcf892ed958d273bbd8268de5e4cf3955595ba90e40f9aedf8c50",
+    "reversed": "183aae7b36af41db4779d3052f86baa0d7ececc56382fbda5d668fbc8d1ce776",
+    "transfer": "5f865fb7d242c3544ce556fcd7b497faab7be502cecb7fedb9e4e54e115c141a"
+  },
+  "privacy": "Artwork contains no plaintext metadata. Project and manifest contain private input. Reversible geometry is not encryption.",
+  "constraints": {
+    "issues": [],
+    "minStructuralWidth": 1.1687338833113403,
+    "minTerminalWidth": 0.8173071026242203,
+    "minGap": 0.9323422964532763,
+    "bounds": {
+      "minX": 10.1972,
+      "minY": 18.1753,
+      "maxX": 81.153,
+      "maxY": 80.6949
+    },
+    "suggestedDiameter": 90
+  },
+  "limitation": "No claim of decodability after edits, photographs, tattooing or aging; artist judgment required."
+}

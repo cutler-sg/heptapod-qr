@@ -1,0 +1,389 @@
+{
+  "format": "arrival-atelier-manifest/1",
+  "ir": {
+    "version": "atelier-ir/1",
+    "originalInput": "Michael",
+    "selectedInput": "Who is like God?",
+    "normalizedInput": "Who is like God?",
+    "normalization": "none",
+    "mode": "meaning",
+    "codecVersion": "heptapod-ink/geometry-v1-restored",
+    "marks": [
+      {
+        "order": 0,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 1,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 2,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 3,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 4,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 5,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 6,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 7,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 8,
+        "digit": 7,
+        "swelling": 2,
+        "tendril": true
+      },
+      {
+        "order": 9,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 10,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 11,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 12,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 13,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 14,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 15,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 16,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 17,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 18,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 19,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 20,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 21,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 22,
+        "digit": 5,
+        "swelling": 0,
+        "tendril": true
+      },
+      {
+        "order": 23,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 24,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 25,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 26,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 27,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 28,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 29,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 30,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 31,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 32,
+        "digit": 3,
+        "swelling": 3,
+        "tendril": false
+      },
+      {
+        "order": 33,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 34,
+        "digit": 0,
+        "swelling": 0,
+        "tendril": false
+      },
+      {
+        "order": 35,
+        "digit": 6,
+        "swelling": 1,
+        "tendril": true
+      },
+      {
+        "order": 36,
+        "digit": 2,
+        "swelling": 2,
+        "tendril": false
+      },
+      {
+        "order": 37,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 38,
+        "digit": 7,
+        "swelling": 2,
+        "tendril": true
+      },
+      {
+        "order": 39,
+        "digit": 4,
+        "swelling": 4,
+        "tendril": false
+      },
+      {
+        "order": 40,
+        "digit": 9,
+        "swelling": 4,
+        "tendril": true
+      },
+      {
+        "order": 41,
+        "digit": 8,
+        "swelling": 3,
+        "tendril": true
+      },
+      {
+        "order": 42,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      },
+      {
+        "order": 43,
+        "digit": 1,
+        "swelling": 1,
+        "tendril": false
+      }
+    ],
+    "checksum": 37223,
+    "compact": false,
+    "orientation": "Source: first outer-path point beside gap, clockwise in SVG coordinates, then reversed inner run. Tattoo derivative: same ordered classes; no supported decoder.",
+    "styleSeed": 42,
+    "renderVersion": "atelier/1",
+    "upstreamCommit": "34817c6f925a85ece2c80599148b70d96de578696bf4bb86e9cc8f0a8c12c49e",
+    "dimensions": {
+      "widthMm": 90,
+      "heightMm": 90
+    },
+    "constraints": {
+      "diameter": 90,
+      "minWidth": 0.8,
+      "minGap": 0.8,
+      "tendrilCount": 5,
+      "tendrilLength": 10,
+      "density": 0.55,
+      "reduction": 0.35,
+      "taper": 0.3,
+      "spatter": false,
+      "rotation": 0,
+      "margin": 5
+    }
+  },
+  "settings": {
+    "diameter": 90,
+    "minWidth": 0.8,
+    "minGap": 0.8,
+    "tendrilCount": 5,
+    "tendrilLength": 10,
+    "density": 0.55,
+    "reduction": 0.35,
+    "taper": 0.3,
+    "spatter": false,
+    "rotation": 0,
+    "margin": 5
+  },
+  "upstream": {
+    "url": "https://tangled.org/mads.havmand.eu/heptapod-ink",
+    "commit": "34817c6f925a85ece2c80599148b70d96de578696bf4bb86e9cc8f0a8c12c49e",
+    "packageVersion": "0.1.3",
+    "geometryFormat": "restored-v1",
+    "license": "MIT"
+  },
+  "status": {
+    "source": "Verified serialized path-geometry round trip; no plaintext metadata.",
+    "stencil": "Artistic derivative; no supported geometric decoding.",
+    "reversed": "White shapes on a black field; ink and negative space exchange roles. Artistic derivative.",
+    "transfer": "Horizontally reflected stencil for transfer only; do not mistake it for final artwork."
+  },
+  "contentHashAlgorithm": "SHA-256 of exact UTF-8 SVG bytes",
+  "contentHashes": {
+    "source": "02f730bc8f4d7059a88e7bbf0c52878faa4dc20ee5c695c2b55a59c213ac04d3",
+    "stencil": "dd9b3007458edd5c538ac71f5b6f8a26867fbdb6c30c85844eab6377bb37afec",
+    "reversed": "f204c2449f21df2b5a100c079c9fce06d1255287f4e402cb513fb02bbcc12bea",
+    "transfer": "90ecd2f0b09699642fef7c194542be9525ca7584acdaa92bb2b4161362080971"
+  },
+  "privacy": "Artwork contains no plaintext metadata. Project and manifest contain private input. Reversible geometry is not encryption.",
+  "constraints": {
+    "issues": [
+      {
+        "kind": "collision",
+        "shapes": [
+          "mark-16",
+          "ornament-0"
+        ],
+        "measured": 0,
+        "at": [
+          63.4642,
+          63.7967
+        ],
+        "message": "Filled polygons overlap or touch outside an intentional attachment."
+      },
+      {
+        "kind": "gap",
+        "shapes": [
+          "mark-22",
+          "mark-23"
+        ],
+        "measured": 0.2664971977598965,
+        "at": [
+          44.524670807947516,
+          79.26582683892583
+        ],
+        "message": "Polygon boundaries are below the requested minimum gap."
+      },
+      {
+        "kind": "gap",
+        "shapes": [
+          "mark-29",
+          "mark-30"
+        ],
+        "measured": 0.5437569530438484,
+        "at": [
+          18.341178105714732,
+          65.30382479854232
+        ],
+        "message": "Polygon boundaries are below the requested minimum gap."
+      }
+    ],
+    "minStructuralWidth": 1.16864828755276,
+    "minTerminalWidth": 0.8172089696032431,
+    "minGap": 0,
+    "bounds": {
+      "minX": 8.4128,
+      "minY": 11.7685,
+      "maxX": 79.0373,
+      "maxY": 81.2829
+    },
+    "suggestedDiameter": 90
+  },
+  "limitation": "No claim of decodability after edits, photographs, tattooing or aging; artist judgment required."
+}

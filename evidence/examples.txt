@@ -1,0 +1,5 @@
+$ bun scripts/examples.ts
+Michael: source + artist exports, 12 variants, 600dpi PNG and scale-1 A4 PDF
+michael: source + artist exports, 12 variants, 600dpi PNG and scale-1 A4 PDF
+who-is-like-god: source + artist exports, 12 variants, 600dpi PNG and scale-1 A4 PDF
+there-is-no-linear-time: source + artist exports, 12 variants, 600dpi PNG and scale-1 A4 PDF
