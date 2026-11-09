@@ -16,3 +16,8 @@ A local-only TypeScript tool preserves exact case and whitespace, explicitly sel
 
 ## Rendering decision
 Preserve the vendored v1 encoder and its ordered polygon coordinates in the source export, adding physical SVG dimensions and symmetric viewBox padding only. Tattoo paths are a new artist-facing rendering of the same slots, explicitly **artistic derivatives, not supported geometry encodings**. They preserve all slot classes but do not promise upstream decoding. Decoration uses a one-way text/seed hash. No plaintext is placed in artwork; project and manifest deliberately contain it.
+
+## Follow-up: complete design showcase
+- [x] Build a gallery of all 48 source/artist pairs plus the decorative study, with enlarged comparison and reversal/transfer treatments.
+- [x] Verify offline images, gallery filters, selection and mobile sizing; display the gallery in the conversation.
+- [x] Commit the reproducible gallery and standalone HTML on the existing local branch.

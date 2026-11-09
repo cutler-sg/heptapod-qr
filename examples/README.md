@@ -12,3 +12,5 @@ Each named folder includes twelve source/artist pairs (seeds 42–53), selected-
 - `comparison.html` / `.pdf`: exact spelling, chosen phrase and decoration with source/artist columns. These images are fitted for comparison, not print templates.
 
 Use each `print-at-100-percent` sheet at 100%/Actual size, measure its 50 mm scale bar, and review `manifest.json` constraints plus `docs/ARTIST-CHECKLIST.md`. Warnings are preserved in the manifest; none are automatically corrected by discarding marks. Artist SVGs have no supported geometry decoder.
+
+`showcase.html` is the complete standalone interactive gallery: 48 encoded studies (source and artist views), the decorative study, and reversed/mirrored seed-42 treatments. Filter collections, change the gallery view, or click any seed for an enlarged comparison. It contains private plaintext and embeds all artwork for offline use. Rebuild with `bun scripts/showcase.ts`; `showcase-inline.html` is the local-path version used for conversation rendering.
