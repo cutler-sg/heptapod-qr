@@ -1,0 +1,10 @@
+test_blank_image_rejected (__main__.ReaderTests.test_blank_image_rejected) ... ok
+test_clean_raster_with_known_geometry_recovers_echo (__main__.ReaderTests.test_clean_raster_with_known_geometry_recovers_echo) ... ok
+test_corruption_and_invalid_digits_fail (__main__.ReaderTests.test_corruption_and_invalid_digits_fail) ... ok
+test_crc_standard_check_value (__main__.ReaderTests.test_crc_standard_check_value) ... ok
+test_packing_matches_vendored_codec (__main__.ReaderTests.test_packing_matches_vendored_codec) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.047s
+
+OK

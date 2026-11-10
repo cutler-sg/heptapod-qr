@@ -70,3 +70,7 @@ SVG bytes, projects and manifests contain no timestamps. SVG/PNG generation is d
 ## License
 
 MIT for original code. Required upstream and bundled runtime notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`. No remote repository, deployment or publication is part of this project.
+
+## Experimental smartphone-photo reading
+
+A later image-only decoding attempt is preserved in [experiments/photo_decode](experiments/photo_decode/README.md). It recovered **no checksum-valid text** from the supplied tattoo photograph. This optional local Python research script is not part of the browser app and does not establish camera-scanning support. The earlier visual identification of a source design remains distinct from optical decoding.

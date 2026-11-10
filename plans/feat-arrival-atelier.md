@@ -21,3 +21,8 @@ Preserve the vendored v1 encoder and its ordered polygon coordinates in the sour
 - [x] Build a gallery of all 48 source/artist pairs plus the decorative study, with enlarged comparison and reversal/transfer treatments.
 - [x] Verify offline images, gallery filters, selection and mobile sizing; display the gallery in the conversation.
 - [x] Commit the reproducible gallery and standalone HTML on the existing local branch.
+
+## Follow-up: experimental optical decoding
+- [x] Implement a local image-only mark reader, separated from known-source matching and plaintext; document assumptions and search limits.
+- [x] Verify checksum rejection and synthetic raster behavior; attempt the supplied photo and report actual success/failure and ambiguity.
+- [x] Preserve reproducible analysis code and results without committing the private photograph; review and commit locally.

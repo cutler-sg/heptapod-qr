@@ -5,3 +5,6 @@ secrets/
 playwright-report/
 test-results/
 .impeccable/review/
+
+# Local Python analysis caches
+__pycache__/

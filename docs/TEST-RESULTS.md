@@ -44,7 +44,7 @@ The design scanner's static warnings are recorded in `evidence/design-detector.j
 
 - A physical printer or tattoo on skin was not tested. Browser CSS/PDF scale does not calibrate a printer.
 - Geometric screening is not an exhaustive medial-axis proof of every feature width/channel. Widths use authored cross-sections; self-channel screening is sampled and conservative. Original circular spatter is approximated by a polygon for screening. Collision warnings can remain, and scale suggestions cannot fix intersections.
-- No optical/image/photo decoder exists. The core parser reads ordered serialized paths and ignores styling. CRC-16 does not authenticate or cryptographically protect input.
+- No supported optical/image/photo decoder exists. A later local prototype attempted the supplied smartphone photo without recovering a checksum-valid payload; see `experiments/photo_decode/README.md`. The core parser reads ordered serialized paths and ignores styling. CRC-16 does not authenticate or cryptographically protect input.
 - Browser compatibility beyond the tested Chromium/Linux combination, screen-reader behavior, skin aging and artist modifications are unverified.
 - SVG byte determinism is pinned by goldens. PDF byte identity across browser versions is not claimed; bundled example creation/modification dates are normalized without changing byte offsets.
 - Alternatives were inspected at reference level only. No Torus or Python generator runtime/round-trip certification is claimed.
