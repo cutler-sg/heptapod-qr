@@ -35,5 +35,5 @@ Prepare public version 0.1.0 locally. No remote creation, push, tag, deployment,
 - [x] Prepare README, contribution/security guidance, compatibility contract, release notes and upstream-update instructions.
 - [x] Audit tracked files and reachable Git history for private content, local paths and attribution; record evidence and unresolved publication decisions without rewriting history.
 - [x] Add pinned, read-only CI verification and a reproducible, allowlisted offline release ZIP with instructions, notices, selected examples and checksums.
-- [ ] Run lint/types/tests, offline app/showcase checks, deterministic build/package checks and a fresh-checkout verification; regenerate branded examples.
-- [ ] Review full diff, record actual results and commit locally with clean state. Publication remains a separate user-authorized action.
+- [x] Run lint/types/tests, offline app/showcase checks, deterministic build/package checks and a fresh-checkout verification; regenerate branded examples.
+- [x] Review full diff, record actual results and commit locally with clean state. Publication remains a separate user-authorized action.

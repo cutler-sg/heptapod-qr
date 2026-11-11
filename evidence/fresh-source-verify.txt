@@ -1,0 +1,123 @@
+Fresh committed source snapshot created; no dependency tree copied.
+bun install v1.3.14 (0d9b296a)
+
++ @biomejs/biome@2.4.6
++ @types/bun@1.3.10
++ esbuild@0.27.3
++ playwright@1.58.2
++ typescript@5.9.3
++ zod@4.3.6
+
+13 packages installed [245.00ms]
+$ bun scripts/verify.ts
+$ tsc --noEmit
+$ biome check src tests scripts
+Checked 25 files in 32ms. No fixes applied.
+$ bun test tests/*.test.ts
+bun test v1.3.14 (0d9b296a)
+
+tests/codec.test.ts:
+(pass) audited v1 interface > exact Michael, case, Unicode, punctuation and whitespace round trips [128.53ms]
+(pass) audited v1 interface > all twelve source variants preserve payload and mark classes [325.09ms]
+(pass) audited v1 interface > physical width, symmetric padding and baked rotations preserve path decoding [75.83ms]
+(pass) audited v1 interface > checksum detects corruption and legacy v2 fails explicitly [2.61ms]
+(pass) audited v1 interface > stripping optional plaintext metadata does not affect core decoding [1.30ms]
+(pass) audited v1 interface > committed upstream hash corpus still matches unmodified encoder [7400.06ms]
+(pass) input and project boundaries > pre-rename saved example projects still reproduce source and artist geometry [25.75ms]
+(pass) input and project boundaries > normalization is explicit, case and whitespace never change [0.28ms]
+(pass) input and project boundaries > empty, malformed Unicode, excessive byte length and invalid controls reject [0.98ms]
+(pass) input and project boundaries > project JSON reproduces byte-identical source and derivative [9.12ms]
+(pass) input and project boundaries > hostile SVGs and ignored presentation tricks fail before decoding [8.69ms]
+
+tests/geometry.test.ts:
+(pass) final millimetre polygon screening > reports structural widths and terminal tips separately [1.02ms]
+(pass) final millimetre polygon screening > detects ink outside the safe inset [0.12ms]
+(pass) final millimetre polygon screening > reports a near-touching gap and accepts a gap above threshold [1.07ms]
+(pass) final millimetre polygon screening > detects crossings, contact, and complete containment [0.49ms]
+(pass) final millimetre polygon screening > detects self-intersection even with a zero gap threshold [0.17ms]
+(pass) final millimetre polygon screening > detects a narrow exterior channel without treating solid ink as air [0.36ms]
+(pass) final millimetre polygon screening > exempts only the ring/tendril overlap inside the explicit join circle [0.52ms]
+(pass) final millimetre polygon screening > a join does not hide a near miss elsewhere on the same pair [0.24ms]
+(pass) final millimetre polygon screening > handles empty input and repeated closing points [0.09ms]
+(pass) final millimetre polygon screening > allows four-decimal coordinate rounding at nominal minima [0.13ms]
+
+tests/render.test.ts:
+(pass) artist derivative contract > deterministic 12 seeds retain every mandatory mark; never claimed v1 [356.66ms]
+(pass) artist derivative contract > mark classes persist under physical settings and decoration reduction [1.98ms]
+(pass) artist derivative contract > bad dimensions produce warnings without dropping encoded marks [300.14ms]
+(pass) artist derivative contract > decorative mode is deterministic and has no encoded source or checksum [2.68ms]
+(pass) artist derivative contract > mirroring explicitly reflects coordinates and reversal swaps ink/background [3.94ms]
+(pass) artist derivative contract > manifest hashes exact files without timestamps and print sheet uses mm [19.20ms]
+(pass) artist derivative contract > comparison contains all three modes and escapes user text [20.60ms]
+(pass) artist derivative contract > committed golden SVG bytes do not drift [21.73ms]
+
+ 29 pass
+ 0 fail
+ 4701 expect() calls
+Ran 29 tests across 3 files. [8.76s]
+$ bun scripts/build.ts
+Built dist/index.html — standalone, offline, no server required.
+$ bun scripts/build.ts
+Built dist/index.html — standalone, offline, no server required.
+PASS byte-identical standalone builds
+$ bun scripts/showcase.ts
+Showcase: 49 selectable studies, 48 source/artist pairs, 8 reversal/transfer treatments. 4300391 standalone HTML bytes.
+$ bun scripts/browser-test.ts
+PASS standalone file boots offline with Michael, 12 variants and adjacent caveat
+PASS selected variant project download/import reproduces exact stencil bytes
+PASS meaning phrase requires explicit choice; invalid state disables exports; undo/reset work
+PASS case is preserved in editor and exported geometry
+PASS source/artist comparison, transparent preview and separate physical reports
+PASS physical controls change final SVG millimetres
+PASS SVG/source/reverse/transfer, 2126px PNG, manifest, comparison and print downloads
+PASS source import decodes geometry and hostile SVG/JSON cannot execute or pollute
+PASS decorative mode disables source and exposes non-reversible status
+PASS 390px mobile layout has no horizontal overflow
+PASS print CSS measures 90mm artwork and 50mm scale bar; A4 PDF generated at scale 1
+PASS zero HTTP(S) requests, zero page errors, zero persistent local storage
+$ bun scripts/check-showcase.ts
+{
+  studies: 49,
+  images: 107,
+  loadedImages: true,
+  filters: true,
+  selection: true,
+  decorativeStatus: true,
+  mobileOverflow: false,
+  externalRequests: [],
+  pageErrors: [],
+}
+$ bun scripts/check-release.ts
+$ bun scripts/release.ts
+$ bun scripts/build.ts
+Built dist/index.html — standalone, offline, no server required.
+Prepared release/heptapod-qr-0.1.0.zip (55 files, 2606485 bytes). Nothing published.
+$ bun scripts/release.ts
+$ bun scripts/build.ts
+Built dist/index.html — standalone, offline, no server required.
+Prepared release/heptapod-qr-0.1.0.zip (55 files, 2606485 bytes). Nothing published.
+PASS standalone file boots offline with Michael, 12 variants and adjacent caveat
+PASS selected variant project download/import reproduces exact stencil bytes
+PASS meaning phrase requires explicit choice; invalid state disables exports; undo/reset work
+PASS case is preserved in editor and exported geometry
+PASS source/artist comparison, transparent preview and separate physical reports
+PASS physical controls change final SVG millimetres
+PASS SVG/source/reverse/transfer, 2126px PNG, manifest, comparison and print downloads
+PASS source import decodes geometry and hostile SVG/JSON cannot execute or pollute
+PASS decorative mode disables source and exposes non-reversible status
+PASS 390px mobile layout has no horizontal overflow
+PASS print CSS measures 90mm artwork and 50mm scale bar; A4 PDF generated at scale 1
+PASS zero HTTP(S) requests, zero page errors, zero persistent local storage
+{
+  studies: 49,
+  images: 107,
+  loadedImages: true,
+  filters: true,
+  selection: true,
+  decorativeStatus: true,
+  mobileOverflow: false,
+  externalRequests: [],
+  pageErrors: [],
+}
+PASS deterministic ZIP, 55 safe entries, all checksums/notices, unpacked app and gallery offline
+PASS fresh source install, complete verification and deterministic offline release

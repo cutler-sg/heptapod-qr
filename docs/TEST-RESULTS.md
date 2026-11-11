@@ -1,5 +1,22 @@
 # Verification results
 
+## Heptapod QR 0.1.0 preparation — 11 November 2026
+
+The renamed application passed `bun run verify` and `bun run test:release` on Linux with Bun 1.3.14 and the locked development dependencies. A separate fresh source snapshot of commit `5b24702` was extracted with `git archive`, installed using `bun install --frozen-lockfile`, and passed both commands. No `node_modules` directory was copied; the existing machine's package/browser caches were available. This is fresh-source verification, not a second-machine test.
+
+- **29 unit tests passed, 0 failed; 4,701 assertions.** Includes the 2,097-entry upstream corpus and import/reproduction of pre-rename saved examples.
+- **12 grouped offline browser checks passed**, including the new product title/QR caveat, source/project import, exports, hostile inputs, 390 px layout and print dimensions. Zero HTTP(S) requests, page errors or localStorage entries were observed.
+- **49 showcase studies / 107 images passed** loading, filtering, selection, decorative-status and mobile-overflow checks without external requests.
+- **Two standalone builds were byte-identical. Two ZIP builds were byte-identical.** All 55 archive entries, checksums and complete runtime license files passed validation. The extracted app and gallery passed the offline browser suites separately from the source build.
+- TypeScript and Biome passed. The GitHub workflow passed local `actionlint` 1.7.7 validation. Remote GitHub Actions have **not run**: no remote repository exists.
+- Source SVGs, artist SVGs, saved example projects, manifests, golden fixtures and vendored codec files have no changes from the pre-rename revision. Branded print/comparison sheets and screenshots were regenerated.
+
+Raw current logs: `evidence/release-verify.txt`, `evidence/fresh-source-verify.txt` and `evidence/release-package-check.txt`. Review of current/historical publication content is recorded in `docs/PUBLICATION-REVIEW.md`. ZIP byte reproducibility is verified with the local Linux Info-ZIP toolchain; PDF container byte reproducibility across browsers remains unsupported.
+
+The earlier upstream suite and optical experiment results below retain their original dates; neither is relabelled as a new run.
+
+## Original implementation verification
+
 Run on 8 November 2026, Linux, Bun 1.3.14, TypeScript 5.9.3, Chromium 145 via Playwright 1.58.2. Upstream suite used Node v24.18.0.
 
 | Scope | Actual result | Evidence |

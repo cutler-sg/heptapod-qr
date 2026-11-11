@@ -1,0 +1,11 @@
+{
+  "name": "heptapod-qr",
+  "version": "0.1.0",
+  "archive": "heptapod-qr-0.1.0.zip",
+  "bytes": 2607389,
+  "sha256": "fb4efa84b939d3fe968364f5a6cc3ec8be1760957e8b214c8330418e6d238e91",
+  "appSha256": "f114813ec4c6216ff0cee1acc47822b1d650806f2c226b15d1b33646ee97aa78",
+  "entries": 55,
+  "publication": "local-only; no remote, tag or release",
+  "freshSourceCommit": "5b24702"
+}
