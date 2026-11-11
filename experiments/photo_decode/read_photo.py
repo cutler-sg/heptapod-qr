@@ -4,6 +4,9 @@
 # ///
 """Experimental image-only reader for the restored heptapod-ink v1 mark system.
 
+Packing/checksum adapted from heptapod-ink, Copyright (c) 2026 Mads R. Havmand.
+MIT license: ../../vendor/heptapod-ink/LICENSE.
+
 Not a supported camera codec. No source SVG, seed, expected text, dictionary, project,
 or reference template is accepted. A crop/slot-count hint is explicitly reported.
 CRC matches after a search are candidates, not authenticated readings.

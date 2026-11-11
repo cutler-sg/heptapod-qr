@@ -114,6 +114,19 @@ describe("audited v1 interface", () => {
   }, 60000);
 });
 describe("input and project boundaries", () => {
+  test("pre-rename saved example projects still reproduce source and artist geometry", () => {
+    for (const family of ["Michael", "michael", "who-is-like-god", "there-is-no-linear-time"]) {
+      const project = readFileSync(`examples/${family}/project.json`, "utf8");
+      const restored = loadProject(project);
+      expect(saveProject(restored)).toBe(project);
+      expect(encodedSource(restored)?.svg).toBe(
+        readFileSync(`examples/${family}/encoded-source-v1.svg`, "utf8"),
+      );
+      expect(renderArtwork(restored).svg).toBe(
+        readFileSync(`examples/${family}/artist-stencil.svg`, "utf8"),
+      );
+    }
+  });
   test("normalization is explicit, case and whitespace never change", () => {
     const raw = stateFor("  e\u0301 MICHAEL\n");
     expect(normalizedText(raw)).toBe(raw.input);

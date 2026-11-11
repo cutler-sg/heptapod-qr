@@ -31,9 +31,9 @@ Preserve the vendored v1 encoder and its ordered polygon coordinates in the sour
 
 Prepare public version 0.1.0 locally. No remote creation, push, tag, deployment, publication or contact. Keep the existing branch and preserve all saved-project, IR, manifest and rendering identifiers. Release artwork must retain existing geometry and golden fixtures.
 
-- [ ] Apply Heptapod QR identity and 0.1.0 application version; verify existing saved projects and artwork remain compatible.
-- [ ] Prepare README, contribution/security guidance, compatibility contract, release notes and upstream-update instructions.
-- [ ] Audit tracked files and reachable Git history for private content, local paths and attribution; record evidence and unresolved publication decisions without rewriting history.
-- [ ] Add pinned, read-only CI verification and a reproducible, allowlisted offline release ZIP with instructions, notices, selected examples and checksums.
+- [x] Apply Heptapod QR identity and 0.1.0 application version; verify existing saved projects and artwork remain compatible.
+- [x] Prepare README, contribution/security guidance, compatibility contract, release notes and upstream-update instructions.
+- [x] Audit tracked files and reachable Git history for private content, local paths and attribution; record evidence and unresolved publication decisions without rewriting history.
+- [x] Add pinned, read-only CI verification and a reproducible, allowlisted offline release ZIP with instructions, notices, selected examples and checksums.
 - [ ] Run lint/types/tests, offline app/showcase checks, deterministic build/package checks and a fresh-checkout verification; regenerate branded examples.
 - [ ] Review full diff, record actual results and commit locally with clean state. Publication remains a separate user-authorized action.

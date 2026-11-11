@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { build } from "esbuild";
+import { version } from "../package.json";
 
 const [html, css, coreLicense, zodLicense, compiled] = await Promise.all([
   readFile("src/index.html", "utf8"),
@@ -24,6 +25,7 @@ await mkdir("dist", { recursive: true });
 await writeFile(
   "dist/index.html",
   html
+    .replace("<!-- VERSION -->", version)
     .replace("<!-- CSP -->", `<meta http-equiv="Content-Security-Policy" content="${csp}">`)
     .replace("<!-- STYLE -->", `<style>${css}</style>`)
     .replace(

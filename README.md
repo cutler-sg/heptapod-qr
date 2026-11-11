@@ -1,10 +1,22 @@
-# Arrival Atelier
+# Heptapod QR
 
-A local name-to-logogram design workbench for a tattoo based on **Michael**. Original Arrival-inspired fan encoding, **not an authentic Heptapod B translation**. No canonical Michael glyph or complete film-name grammar is asserted, and neither Ian nor Louise is used to derive it.
+**Make your own alien QR code.** Heptapod QR is an offline design workbench: turn text into reproducible, Arrival-inspired circular artwork, preserve an encoded SVG source, explore twelve seeded artist studies, and export a measured print sheet and editable vectors.
+
+![Who is like God? — preserved encoded source, seed 46](examples/who-is-like-god/variants/seed-46-source.svg)
+
+*Chosen-meaning phrase `Who is like God?`, seed 46, preserved source geometry. Open the [interactive showcase](examples/showcase.html) after downloading the repository, or browse the [example studies](examples/README.md).*
+
+The project began with a personal tattoo study for Michael. Comparing seeded designs with a tattoo photograph identified the `Who is like God?` source, seed 46, as the closest **visual match**. Its paths and circles match the pinned heptapod-ink encoder exactly. That comparison did not decode the photograph. A later image-only experiment recovered **no checksum-valid text**; see the [research record](experiments/photo_decode/README.md).
+
+The name is an analogy: like a QR code, the preserved source encodes text in geometry. It is **not a QR standard**, and ordinary QR scanners cannot read it. The supported decoder reads ordered SVG coordinates, not camera images. Artist studies change that geometry and have no supported decoder.
+
+Built on Mads R. Havmand’s MIT-licensed [heptapod-ink](https://tangled.org/mads.havmand.eu/heptapod-ink), with original artist rendering and export tooling. Developed with AI assistance; generated artwork is procedural, not AI-generated imagery.
+
+Original Arrival-inspired fan encoding, **not an authentic Heptapod B translation**. No canonical Michael glyph or complete film-name grammar is asserted, and neither Ian nor Louise is used to derive it.
 
 ## Open locally
 
-A built copy is in `dist/index.html`. Open that file directly in a modern desktop browser. It is one self-contained file and works without a server or internet connection. No accounts, telemetry, AI services, fonts or images are fetched. Names remain in memory until you explicitly save a file. Closing/reloading discards unsaved work.
+For the locally prepared **v0.1.0** release, extract `release/heptapod-qr-0.1.0.zip` and open its root `index.html`. No public download is available from this local preparation. A source build writes `dist/index.html`. Open either HTML file directly in a modern desktop browser. It is one self-contained file and works without a server or internet connection. No accounts, telemetry, AI services, fonts or images are fetched. Names remain in memory until you explicitly save a file. Closing/reloading discards unsaved work.
 
 To reproduce the build with Bun:
 
@@ -49,13 +61,15 @@ The artist study retains slot classes but changes widths, curves and point count
 ## Verification
 
 ```sh
-bun run typecheck
-bun run check
-bun test tests/*.test.ts
-bun run build
-bun run test:browser
-bun run examples
+bun run verify
+# Rebuild the offline gallery independently:
+bun run showcase
+bun run test:showcase
+# Prepare the deterministic offline release ZIP and SHA256SUMS:
+bun run release
 ```
+
+`verify` runs type checking, formatting/lint checks, unit tests, deterministic build checks, browser workflows and showcase checks. Release preparation is local; it does not publish or tag. See [contributing](CONTRIBUTING.md), [compatibility](docs/COMPATIBILITY.md) and the [release procedure](docs/RELEASING.md).
 
 The browser scripts need the pinned Playwright Chromium installation. If it is missing, install once with `bunx playwright install chromium`. Tests use a file URL and an offline browser context; no server is started. See [actual results and limitations](docs/TEST-RESULTS.md), raw logs in `evidence/`, [architecture](docs/ARCHITECTURE.md), and the [artist checklist](docs/ARTIST-CHECKLIST.md).
 
@@ -69,7 +83,7 @@ SVG bytes, projects and manifests contain no timestamps. SVG/PNG generation is d
 
 ## License
 
-MIT for original code. Required upstream and bundled runtime notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`. No remote repository, deployment or publication is part of this project.
+MIT for original code. Required upstream and bundled runtime notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`. This v0.1.0 preparation creates local artifacts only; no remote repository, deployment, tag or publication has been created. See [security and reporting readiness](SECURITY.md).
 
 ## Experimental smartphone-photo reading
 

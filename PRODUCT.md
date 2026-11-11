@@ -1,4 +1,4 @@
-# Arrival Atelier
+# Heptapod QR
 <!-- impeccable:product-schema 1 -->
 ## Platform
 web

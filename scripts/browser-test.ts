@@ -39,8 +39,10 @@ async function ready(p: Page) {
 }
 try {
   await mkdir("evidence/screenshots", { recursive: true });
-  await page.goto(pathToFileURL(resolve("dist/index.html")).href);
+  await page.goto(pathToFileURL(resolve(process.argv[2] ?? "dist/index.html")).href);
   await ready(page);
+  assert((await page.title()).startsWith("Heptapod QR"));
+  assert((await page.locator(".caveat").textContent())?.includes("QR scanners"));
   assert.equal(await page.locator("#input").inputValue(), "Michael");
   assert.equal(await page.locator("#payload").textContent(), '"Michael"');
   assert(await page.locator(".caveat").isVisible());

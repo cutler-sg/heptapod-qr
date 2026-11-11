@@ -17,7 +17,7 @@ try {
   page.on("request", (request) => {
     if (/^https?:/.test(request.url())) requests.push(request.url());
   });
-  await page.goto(pathToFileURL(resolve("examples/showcase.html")).href);
+  await page.goto(pathToFileURL(resolve(process.argv[2] ?? "examples/showcase.html")).href);
   await page.waitForFunction(() =>
     [...document.images].every((img) => img.complete && img.naturalWidth > 0),
   );

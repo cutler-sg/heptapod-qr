@@ -1,6 +1,6 @@
 # Tattoo-artist review checklist
 
-- [ ] Confirm the intended payload, exact case and punctuation with Michael. Distinguish literal “Michael”, chosen “Who is like God?”, and decoration.
+- [ ] Confirm the intended payload, exact case and punctuation with the wearer. In the supplied examples, distinguish literal “Michael”, chosen “Who is like God?”, and decoration.
 - [ ] Confirm that this is original Arrival-inspired fan work, not a canonical alien translation or film glyph.
 - [ ] Compare the preserved source and artist derivative. Keep both files. Agree which visible elements may be edited; the derivative carries no supported decoding guarantee.
 - [ ] Confirm final unmirrored orientation and placement. Use the separately labelled mirrored transfer only for the transfer process.

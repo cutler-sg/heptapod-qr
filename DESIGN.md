@@ -1,5 +1,5 @@
 ---
-name: Arrival Atelier
+name: Heptapod QR
 description: A local workbench for circular black-ink studies.
 colors:
   ink: "#282a25"
@@ -83,7 +83,7 @@ components:
     padding: "14px 12px 40px"
 ---
 
-# Design System: Arrival Atelier
+# Design System: Heptapod QR
 
 ## Overview
 

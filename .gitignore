@@ -8,3 +8,6 @@ test-results/
 
 # Local Python analysis caches
 __pycache__/
+
+# Prepared locally; publication is a separate action.
+release/

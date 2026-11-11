@@ -1,6 +1,6 @@
 {
-  "name": "arrival-atelier",
-  "version": "1.0.0",
+  "name": "heptapod-qr",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,8 +9,24 @@
     "typecheck": "tsc --noEmit",
     "check": "biome check src tests scripts",
     "test:browser": "bun scripts/browser-test.ts",
-    "examples": "bun scripts/examples.ts"
+    "examples": "bun scripts/examples.ts",
+    "showcase": "bun scripts/showcase.ts",
+    "test:showcase": "bun scripts/check-showcase.ts",
+    "verify": "bun scripts/verify.ts",
+    "release": "bun scripts/release.ts",
+    "test:release": "bun scripts/check-release.ts"
   },
-  "dependencies": {"zod": "4.3.6"},
-  "devDependencies": {"@biomejs/biome": "2.4.6", "@types/bun": "1.3.10", "typescript": "5.9.3", "esbuild": "0.27.3", "playwright": "1.58.2"}
+  "dependencies": {
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.6",
+    "@types/bun": "1.3.10",
+    "typescript": "5.9.3",
+    "esbuild": "0.27.3",
+    "playwright": "1.58.2"
+  },
+  "description": "An offline Arrival-inspired logogram workbench, powered by heptapod-ink.",
+  "license": "MIT",
+  "packageManager": "bun@1.3.14"
 }
