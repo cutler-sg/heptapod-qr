@@ -11,8 +11,9 @@ GitHub uses `main` as its default branch and has an informative description and 
 - [x] Generate a banner, twelve-seed contact sheet, source/artist comparison and current workbench screenshot from actual project assets.
 - [x] Rework README hierarchy and onboarding; retain detailed usage and limitations in linked documentation.
 - [x] Check asset reproducibility, links, types/lint and existing verification. All four PNG hashes matched across repeated generation; 26 local documentation links resolved; `bun run verify` passed all 29 tests, deterministic builds and offline browser/gallery checks.
-- [ ] Inspect the actual GitHub rendering on desktop and mobile, including theme behavior.
-- [ ] Review the full diff, commit, push and open a PR against `main`.
+- [x] Inspect the actual GitHub rendering on desktop and mobile, including theme behavior. At 1280px and 390px, all four PNGs and the status badge loaded with no page overflow. Light and dark theme checks passed; the comparison table scrolls within its container on mobile.
+- [x] Mark generated HTML/evidence and vendored sources for GitHub Linguist so language statistics reflect maintained source rather than bundled galleries.
+- [x] Review the full diff, commit, push and open [PR #1](https://github.com/cutler-sg/heptapod-qr/pull/1) against `main`. Initial push and PR verification jobs passed; the final documentation/attributes follow-up triggers fresh CI.
 
 ## Design and scope
 
