@@ -1,0 +1,6 @@
+# Keep generated galleries and evidence out of language statistics and review noise.
+examples/*.html linguist-generated=true
+examples/**/print-at-100-percent.html linguist-generated=true
+.impeccable/mocks/directions/out/** linguist-generated=true
+evidence/** linguist-generated=true
+vendor/** linguist-vendored=true

@@ -15,3 +15,5 @@ Keep changes focused and include checks for changed behavior. Preserve exact inp
 `fixtures/golden.json` records exact source and artist SVG bytes. The upstream corpus has 2,097 entries. Do not refresh goldens automatically to make failures pass. Explain intentional rendering changes, bump the renderer version when required, inspect the visual and compatibility consequences, and explicitly review updated fixtures. A passing test suite does not approve a change automatically.
 
 A proposed upstream update must follow [the release procedure](docs/RELEASING.md). Optical decoding, tattoo longevity and physical printer calibration are not established capabilities; documentation and contributions must keep those boundaries explicit.
+
+README artwork is built from committed example SVGs and a screenshot of the current app. After `bun run build`, run `bun scripts/readme-assets.ts` to regenerate `docs/assets/`. It uses the pinned Playwright Chromium browser offline and leaves the codec and example geometry untouched. Review generated images alongside README copy; their previews are not true-scale print templates.

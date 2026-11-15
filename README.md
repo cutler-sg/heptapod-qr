@@ -1,90 +1,101 @@
-# Heptapod QR
+![Heptapod QR. A name, in ink. An Arrival-inspired circular encoding of “Who is like God?”, seed 46.](docs/assets/hero.png)
 
-**Make your own alien QR code.** Heptapod QR is an offline design workbench: turn text into reproducible, Arrival-inspired circular artwork, preserve an encoded SVG source, explore twelve seeded artist studies, and export a measured print sheet and editable vectors.
+# Make your own alien QR code.
 
-![Who is like God? — preserved encoded source, seed 46](examples/who-is-like-god/variants/seed-46-source.svg)
+Turn a name or phrase into **Arrival-inspired circular artwork**. Explore twelve reproducible studies, compare the encoded source with an artist-facing interpretation, and export editable vectors and a measured print sheet. The whole workbench runs from a single offline HTML file.
 
-*Chosen-meaning phrase `Who is like God?`, seed 46, preserved source geometry. Open the [interactive showcase](examples/showcase.html) after downloading the repository, or browse the [example studies](examples/README.md).*
+[![Verify](https://github.com/cutler-sg/heptapod-qr/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/cutler-sg/heptapod-qr/actions/workflows/verify.yml)
 
-The project began with a personal tattoo study for Michael. Comparing seeded designs with a tattoo photograph identified the `Who is like God?` source, seed 46, as the closest **visual match**. Its paths and circles match the pinned heptapod-ink encoder exactly. That comparison did not decode the photograph. A later image-only experiment recovered **no checksum-valid text**; see the [research record](experiments/photo_decode/README.md).
+[Get started](#quick-start) · [Browse the artwork](examples/README.md) · [Workbench guide](docs/WORKBENCH.md) · [How it works](#how-it-works) · [Contribute](CONTRIBUTING.md)
 
-The name is an analogy: like a QR code, the preserved source encodes text in geometry. It is **not a QR standard**, and ordinary QR scanners cannot read it. The supported decoder reads ordered SVG coordinates, not camera images. Artist studies change that geometry and have no supported decoder.
+> Original fan encoding, not an authentic Heptapod B translation. “QR” is an analogy: ordinary QR scanners cannot read these designs. The supported decoder reads preserved SVG geometry; artist studies and photographs have no supported decoder.
 
-Built on Mads R. Havmand’s MIT-licensed [heptapod-ink](https://tangled.org/mads.havmand.eu/heptapod-ink), with original artist rendering and export tooling. Developed with AI assistance; generated artwork is procedural, not AI-generated imagery.
+## Quick start
 
-Original Arrival-inspired fan encoding, **not an authentic Heptapod B translation**. No canonical Michael glyph or complete film-name grammar is asserted, and neither Ian nor Louise is used to derive it.
-
-## Open locally
-
-For the locally prepared **v0.1.0** release, extract `release/heptapod-qr-0.1.0.zip` and open its root `index.html`. No public download is available from this local preparation. A source build writes `dist/index.html`. Open either HTML file directly in a modern desktop browser. It is one self-contained file and works without a server or internet connection. No accounts, telemetry, AI services, fonts or images are fetched. Names remain in memory until you explicitly save a file. Closing/reloading discards unsaved work.
-
-To reproduce the build with Bun:
+Install [Bun](https://bun.sh), then:
 
 ```sh
+git clone https://github.com/cutler-sg/heptapod-qr.git
+cd heptapod-qr
 bun install --frozen-lockfile
 bun run build
-# Open dist/index.html in your browser.
 ```
 
-Dependency installation and optional browser installation need network access once; the built application does not. Dependencies are version-pinned and locked. No CDN is used. A restrictive CSP blocks connections, object embedding and unapproved scripts. The etymology reference is an ordinary external link opened only on deliberate click, without a referrer.
+Open **`dist/index.html`** in a modern desktop browser. No server, account or API key required. Installing dependencies needs a connection once; using the built app does not. No telemetry, remote fonts, images or AI services are fetched. Your input stays in memory until you save it; reloading discards unsaved work.
 
-## Using the workbench
+![The current Heptapod QR workbench: text and physical controls on the left, an enlarged artist study and the twelve-seed selection grid.](docs/assets/workbench.png)
 
-1. Choose exact spelling (default `Michael`), an explicitly entered/selected meaning phrase, or non-reversible decorative art. The traditional etymology option is “Who is like God?”, cited to [Behind the Name](https://www.behindthename.com/name/michael). Selecting the mode does **not** silently choose that phrase.
-2. Inspect selected input and payload. Quotes/escapes expose spaces, newlines and tabs. Case and whitespace are never changed. Default Unicode normalization is **none**; NFC is an explicit option. Invalid UTF-16, empty input and payloads over **128 UTF-8 bytes** are rejected. Whitespace-only input is allowed and remains visible as an escaped string.
-3. Choose one of twelve reproducible consecutive seeds. Seed changes retain the encoded digit/mark classes. Save project records the **selected** seed; loading makes that seed the start of a fresh twelve-study grid.
-4. Compare **Encoded source** and **Artist study**. All source variants round-trip through the pinned decoder. Source and derivative have separate print-scale screening reports. Width is the square **canvas** size in mm, including margins; the report gives actual ink bounds.
-5. Adjust physical controls and ornaments. Mandatory data-tendril count is fixed by the payload. Extra count, density and reduction affect only ornament. The source is preserved separately and ignores artist linework controls. Warnings never cause automatic truncation or dropped data.
-6. Export files for the artist, together with the review checklist. Undo restores prior states and variant choices; reset returns to Michael and seed 42. Project import is validated and rejects inconsistent derived data. SVG import is decode-only for the supported source subset, never arbitrary SVG display.
+1. **Choose your words.** Exact spelling, a meaning phrase you explicitly choose, or non-reversible decoration. Case and whitespace are preserved; NFC normalization is opt-in.
+2. **Find your ring.** Compare twelve consecutive seeds, switch between source and artist views, and adjust physical dimensions and linework.
+3. **Take it to your artist.** Save the project, export vectors, and print the scale-bar sheet at 100% / Actual size. Geometry screening supports review; it does not certify tattoo suitability or healing.
 
-## What survives
+For a portable local archive, run `bun run release`, extract `release/heptapod-qr-0.1.0.zip`, and open the enclosed `index.html`. Version 0.1.0 has no published release download yet.
 
-The audited heptapod-ink source is pinned to commit `34817c6f925a85ece2c80599148b70d96de578696bf4bb86e9cc8f0a8c12c49e` (a 64-hex Git object ID). Package 0.1.3 identifies **restored geometry format v1** at that commit. The README's abandoned “0.1.2/0.1.3” wording does not reliably identify the format; see the [audit](docs/UPSTREAM-AUDIT.md).
+## One phrase. Twelve hands.
 
-The source decoder reads serialized, ordered path coordinates and a CRC. It does not recover plaintext metadata, read a photograph or prove visible artwork is intact. The core ignores transforms and styling; the app therefore rejects these on import. Source exports retain the original polygons, disable cosmetic filters, add physical dimensions/padding, and bake rotation into coordinates with a fresh round-trip check.
+The same phrase, **“Who is like God?”**, encoded with seeds 42–53. Each source preserves the same payload and mark classes; the seed changes its drawn form.
 
-The artist study retains slot classes but changes widths, curves and point counts. It is an **artistic derivative without supported geometry decoding**. Decorative mode has no reversible text payload at all. Artist edits, a photograph, tattooing and skin aging have no machine-decoding guarantee. Geometry encoding is not encryption: removing metadata does not make the source anonymous.
+![Twelve actual encoded source designs for “Who is like God?”, arranged in four columns and three rows, labeled seeds 42 through 53.](docs/assets/studies.png)
 
-## Exports and examples
+The [example collections](examples/README.md) include `Michael`, `michael`, `Who is like God?`, and `There is no linear time`: **48 source/artist pairs**, plus a decorative study. After cloning, open **`examples/showcase.html`** for the offline interactive gallery. GitHub displays the HTML source rather than running it.
 
-- Preserved v1 source SVG, physical dimensions in mm; metadata-free.
-- Editable artist/stencil SVG made from filled vector paths; metadata-free.
-- Reversed SVG: white design shapes on a black field, exchanging ink and negative space.
-- Explicitly named **MIRRORED TRANSFER** SVG: horizontal reflection, separate from final orientation.
-- PNG preview: 600 dpi with a pHYs physical-density chunk (90 mm → 2,126 × 2,126 px). Use the scale-bar print sheet to verify actual printing.
-- True-scale A4 HTML print sheet with a 50 mm bar. Print at **100% / Actual size**, disable fit-to-page and browser headers/footers. Save as PDF using the browser if wanted. Examples include pre-rendered A4 PDFs.
-- Project JSON and separate provenance manifest with original/normalized text, mode, seed, dimensions/settings, versions, upstream commit and exact SVG SHA-256 hashes. These and comparison sheets contain private input; filenames omit entered names in app exports.
-- Comparison sheet showing spelling, chosen meaning and decoration, with source and artist columns. Its images are comparison-sized, not print templates.
+## From encoded source to artist study
 
-`examples/` contains Michael, michael, Who is like God?, and There is no linear time. Each has twelve source/artist pairs and the complete selected-seed export set. The last is an original encoding of English text, not a reconstruction of a film glyph. Open `examples/comparison.html` or its PDF.
+The source carries the data. The study gives an artist editable linework to work from. Both are kept, labeled and exported separately.
 
-## Verification
+![The same phrase and seed shown as encoded source on the left and an artist study on the right. Source SVG geometry decodes to text; the simplified artist study has no supported decoder.](docs/assets/source-and-study.png)
+
+| | Encoded source | Artist study | Decoration |
+| --- | --- | --- | --- |
+| Input | Exact text or chosen phrase | The same encoded marks | Text/seed hash |
+| Geometry | Preserved codec polygons | New curves, widths and point counts | Non-reversible artwork |
+| Supported decoding | Ordered source SVG coordinates + CRC | None | None |
+
+These previews are fitted for viewing. Use the separate print sheets for physical scale. Camera scanning, tattoo decoding and recovery from artist edits are not established capabilities.
+
+## Files you can work with
+
+| Export | What you get |
+| --- | --- |
+| **Source SVG** | Preserved encoding with physical dimensions and no plaintext metadata. Geometry remains reversible. |
+| **Artist / stencil SVG** | Editable filled vector paths, plus separate reversed and explicitly labeled mirrored-transfer versions. |
+| **600 dpi PNG** | A preview with physical-density metadata: 2,126 × 2,126 px at a 90 mm canvas. |
+| **A4 print sheet** | True-scale artwork and a 50 mm check bar. Print at 100% / Actual size; disable fit-to-page and headers/footers. |
+| **Project + manifest** | Reloadable settings, payload, seed, versions and exact SVG SHA-256 hashes. These files contain your text. |
+| **Comparison sheet** | Spelling, chosen meaning and decoration together, labeled source versus artist. Viewing scale only. |
+
+See the [full export and input contracts](docs/WORKBENCH.md) and [artist review checklist](docs/ARTIST-CHECKLIST.md). Line widths and gap checks describe the designed geometry; your artist decides size, simplification and placement.
+
+## How it works
+
+Text, a mode bit and a CRC are packed into an integer whose decimal digits determine ordered marks around a ring. Each digit selects a swelling class and whether a tendril is present. A seed changes the drawing while preserving those classes. The source decoder reads ordered SVG coordinates, not a picture of them.
+
+The codec is Mads R. Havmand’s MIT-licensed [heptapod-ink](https://tangled.org/mads.havmand.eu/heptapod-ink), pinned to an audited **restored geometry v1** commit. The artist renderer and export tooling are original to this project. [The upstream audit](docs/UPSTREAM-AUDIT.md) explains the exact pin and the format’s versioning history; [architecture](docs/ARCHITECTURE.md) covers the implementation.
+
+Geometry encoding is **not encryption**. Removing plaintext metadata does not anonymize a source SVG. Imports use a bounded, validated subset; arbitrary SVG is never inserted into the page. A restrictive CSP blocks runtime connections.
+
+## Build, verify, explore
+
+TypeScript · Bun · Zod · Playwright · Biome. Dependencies are pinned and locked; there is no CDN or runtime backend.
 
 ```sh
-bun run verify
-# Rebuild the offline gallery independently:
-bun run showcase
-bun run test:showcase
-# Prepare the deterministic offline release ZIP and SHA256SUMS:
-bun run release
+bunx playwright install chromium  # One-time browser installation for checks
+bun run verify                   # Types, lint, tests, deterministic builds, offline browser/gallery checks
+bun run test:release              # Deterministic ZIP, checksums and unpacked offline workflows
+bun run showcase                 # Rebuild the standalone interactive gallery
+bun scripts/readme-assets.ts     # Rebuild README images after bun run build
 ```
 
-`verify` runs type checking, formatting/lint checks, unit tests, deterministic build checks, browser workflows and showcase checks. Release preparation is local; it does not publish or tag. See [contributing](CONTRIBUTING.md), [compatibility](docs/COMPATIBILITY.md) and the [release procedure](docs/RELEASING.md).
+Verification includes 29 application tests, a 2,097-case upstream hash corpus, exact-byte artwork goldens, hostile SVG/JSON rejection, exports and mobile layout checks. See [recorded results and limits](docs/TEST-RESULTS.md); Chromium on Linux is the verified browser environment. Other engines and physical printer calibration remain unverified.
 
-The browser scripts need the pinned Playwright Chromium installation. If it is missing, install once with `bunx playwright install chromium`. Tests use a file URL and an offline browser context; no server is started. See [actual results and limitations](docs/TEST-RESULTS.md), raw logs in `evidence/`, [architecture](docs/ARCHITECTURE.md), and the [artist checklist](docs/ARTIST-CHECKLIST.md).
+[Contributing](CONTRIBUTING.md) · [Compatibility contract](docs/COMPATIBILITY.md) · [Release procedure](docs/RELEASING.md) · [Private vulnerability reporting](SECURITY.md)
 
-Golden source and artist SVGs are stored in `fixtures/golden.json`; the vendored upstream hash corpus has 2,097 cases. Intentional rendering changes require a renderer version bump and an explicitly reviewed golden update, not an automatic test-time refresh.
+## Why this exists
 
-## Limitations
+This started as a personal tattoo study for Michael. Comparing seeded designs with a tattoo photograph identified **“Who is like God?”, seed 46** as the closest visual match. Its paths and circles match the pinned encoder exactly; the comparison did not decode the photograph. A later image-only experiment recovered **no checksum-valid text**. The [research record](experiments/photo_decode/README.md) preserves that distinction.
 
-Physical screening uses polygon intersections/distances and authored cross-sections; it is conservative and is not a complete medial-axis/minimum-feature proof. Narrow channels can be missed between samples, and intentional attachment neighbourhoods are exempt. Numerical minima concern designed geometry, not healing, longevity or safety. Shorter tendrils can fit entirely within a join region. Scaling estimates cannot repair crossings, and may exceed the application's 180 mm canvas limit. An artist must decide whether to enlarge, simplify or abandon a study.
+“Who is like God?” is a traditional etymology of Michael, cited to [Behind the Name](https://www.behindthename.com/name/michael). The app offers it only as an explicit phrase choice. No canonical Michael glyph or complete film-name grammar is asserted; neither Ian nor Louise is used to derive one. “There is no linear time” is an original encoding of English text, not a reconstructed film glyph.
 
-SVG bytes, projects and manifests contain no timestamps. SVG/PNG generation is deterministic for a pinned renderer/runtime. Print geometry is fixed, but browser-generated PDF containers may include browser-specific fonts, compression and dates; PDF byte identity is not promised. The bundled PDF examples normalize creation/modification dates. Browser verification was Chromium on Linux; other engines and physical printer calibration remain unverified.
+Developed with AI assistance. The artwork is generated procedurally from the documented renderer, rather than by an image model. No film assets are bundled.
 
-## License
-
-MIT for original code. Required upstream and bundled runtime notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`. Source is hosted at [cutler-sg/heptapod-qr](https://github.com/cutler-sg/heptapod-qr). Version 0.1.0 artifacts are prepared locally; no release, deployment or tag has been published. See [security and private reporting](SECURITY.md).
-
-## Experimental smartphone-photo reading
-
-A later image-only decoding attempt is preserved in [experiments/photo_decode](experiments/photo_decode/README.md). It recovered **no checksum-valid text** from the supplied tattoo photograph. This optional local Python research script is not part of the browser app and does not establish camera-scanning support. The earlier visual identification of a source design remains distinct from optical decoding.
+MIT for original code. Upstream and runtime licenses are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`.

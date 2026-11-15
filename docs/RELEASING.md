@@ -1,6 +1,6 @@
 # Preparing and publishing a release
 
-The current target is **Heptapod QR / `heptapod-qr` 0.1.0**. Preparation is local. Publishing, contacting external services, creating a remote and creating tags require separate user authorization; this preparation performs none of them. CI configuration is not evidence of a CI run: remote CI remains unexecuted until a repository exists and the workflow actually runs.
+The current target is **Heptapod QR / `heptapod-qr` 0.1.0**. Source is published at [cutler-sg/heptapod-qr](https://github.com/cutler-sg/heptapod-qr), with `main` as the default branch. Release packaging remains local; creating a tag or publishing a release requires explicit authorization. Check [the actual workflow runs](https://github.com/cutler-sg/heptapod-qr/actions/workflows/verify.yml) for remote CI status rather than inferring it from the configuration or local results.
 
 ## Fresh checkout
 
@@ -39,4 +39,4 @@ Review the complete diff, compatibility identifiers, notices and changelog. Keep
 
 ## Publication gate
 
-Only after explicit user authorization: establish the intended public repository, enable and verify GitHub private vulnerability reporting, and replace the readiness text in [SECURITY.md](../SECURITY.md) with its actual route. Verify remote CI rather than assuming local success implies it. Confirm license/notices, public example consent, version and final checksums. Tags and publication are manual authorized actions; there is no automatic publishing step in local release preparation.
+The public source repository and [private vulnerability-reporting route](../SECURITY.md) were established on 15 November 2026 with user authorization. Before publishing a release, verify remote CI and confirm license/notices, public example consent, version and final checksums. Tags and release publication remain manual authorized actions; there is no automatic publishing step in local release preparation.
