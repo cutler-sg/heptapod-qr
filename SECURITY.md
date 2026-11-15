@@ -4,10 +4,10 @@ Heptapod QR runs locally without accounts, telemetry, network APIs or persistent
 
 Encoded geometry is not encryption. Source SVGs can reveal their text through the compatible decoder even without metadata. Project files, manifests and comparison sheets contain plaintext. Treat those files as sensitive when their input is sensitive. CRC-16 detects ordinary corruption; it does not authenticate artwork or protect against tampering.
 
-## Reporting readiness
+## Reporting vulnerabilities
 
-This release is prepared locally. There is currently no public repository or verified private vulnerability-reporting route, and this document does not claim that a reporting service is available. Do not put sensitive vulnerability details into public issues.
+Report suspected vulnerabilities through [GitHub private vulnerability reporting](https://github.com/cutler-sg/heptapod-qr/security/advisories/new). Private reporting was enabled and verified through the repository API on 15 November 2026. Do not put sensitive vulnerability details into public issues.
 
-**Publication gate:** before publishing a repository or release, enable GitHub private vulnerability reporting and verify that its reporting route is accessible. Then update this document with the actual verified route and a realistic supported-version policy. No security contact address, response commitment or support window is asserted here.
+Security fixes target the latest source on the repository's default branch. Version 0.1.0 is prepared locally; there is no published release or backport commitment. No response-time commitment is asserted.
 
 The local checks exercise hostile SVG/JSON rejection and offline workflows. They do not establish a complete security audit, cross-browser coverage or security of arbitrary edited exports. The optional Python photo experiment is separate research and is excluded from the offline release archive.

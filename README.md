@@ -83,7 +83,7 @@ SVG bytes, projects and manifests contain no timestamps. SVG/PNG generation is d
 
 ## License
 
-MIT for original code. Required upstream and bundled runtime notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`. This v0.1.0 preparation creates local artifacts only; no remote repository, deployment, tag or publication has been created. See [security and reporting readiness](SECURITY.md).
+MIT for original code. Required upstream and bundled runtime notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `vendor/`. Source is hosted at [cutler-sg/heptapod-qr](https://github.com/cutler-sg/heptapod-qr). Version 0.1.0 artifacts are prepared locally; no release, deployment or tag has been published. See [security and private reporting](SECURITY.md).
 
 ## Experimental smartphone-photo reading
 

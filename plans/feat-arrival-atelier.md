@@ -37,3 +37,13 @@ Prepare public version 0.1.0 locally. No remote creation, push, tag, deployment,
 - [x] Add pinned, read-only CI verification and a reproducible, allowlisted offline release ZIP with instructions, notices, selected examples and checksums.
 - [x] Run lint/types/tests, offline app/showcase checks, deterministic build/package checks and a fresh-checkout verification; regenerate branded examples.
 - [x] Review full diff, record actual results and commit locally with clean state. Publication remains a separate user-authorized action.
+
+## Follow-up: publish the existing repository
+
+On 15 November 2026, the user authorized committing all current work, adding `https://github.com/cutler-sg/heptapod-qr.git` as origin, and pushing the existing repository. This supersedes the earlier local-only restriction. Preserve the current history and feature branch, including the design direction sources and rendered artifacts. Release archives and installed dependencies remain ignored.
+
+Acceptance criteria: origin points to the supplied repository; the feature branch and complete existing history are pushed with a clean, synchronized working tree. Create a PR if the remote has a separate base branch; an empty remote has no such base. No merge or tagged release is part of this task.
+
+- [x] Confirm the local repository, current changes, GitHub account and empty public remote.
+- [x] Enable and verify private vulnerability reporting, and update the current publication documentation.
+- [x] Run `bun run verify` and `bun run test:release`; review all current deliverables and prepare them for commit and feature-branch push. Both suites passed, including deterministic builds/ZIPs and offline app/gallery checks.
